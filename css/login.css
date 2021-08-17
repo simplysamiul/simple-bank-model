@@ -1,0 +1,22 @@
+body{
+   background-image:linear-gradient(180deg, #151B54, #373c6a)
+}
+header{
+    margin:100px 0;
+}
+header h1{
+    color:#D0D3D4;
+}
+header h1 span{
+    color: #D2B4DE ;
+}
+main{
+    background-image: linear-gradient(180deg, #8E44AD , #4A235A );
+}
+main .form{
+    padding:50px 0;
+}
+.form button{
+    background-color: #17202A;
+    color: #fff;
+}

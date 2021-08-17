@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank-Account</title>
+    <!-- ------------ Css file link ------------->
+    <link rel="stylesheet" href="./css/account.css">
+    <!-- ------------ Tailwind css link ------------->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- ------------ Font Awesome Cdn link ------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------ Favicon link ------------->
+    <link rel="shortcut icon" href="./resource/bank-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="w-3/4 mx-auto text-center">
+        <h1 class="text-5xl font-mono font-bold">Your Account <span> Detail's</span></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+    <section>
+    <div class="grid lg:grid-cols-3 gap-8">
+        <div class="deposit bg-green-400 py-8 rounded-lg text-center">
+            <h4 class="text-3xl font-semibold mb-6 uppercase font-serif">Deposit</h4>
+            <h2 class="text-5xl font-bold">$ <span id="total-deposit">00</span></h2>
+        </div>
+        <div class="deposit bg-red-400 py-8 rounded-lg text-center">
+            <h4 class="text-3xl font-semibold mb-6 uppercase font-serif">WithDraw</h4>
+            <h2 class="text-5xl font-bold">$ <span id="total-withdraw">00</span></h2>
+        </div>
+        <div class="deposit bg-yellow-200 py-8 rounded-lg text-center">
+            <h4 class="text-3xl font-semibold mb-6 uppercase font-serif">Balance</h4>
+            <h2 class="text-5xl font-bold">$ <span id="main-balance">1570</span></h2>
+        </div>
+    </div>
+    </section>
+    <section class="mt-16">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div class="deposit-amount bg-green-400 text-center py-8 rounded-lg">
+                <img class="w-28 inline-block mb-4" src="./resource/money-deposit.svg" alt="">
+                <h4 class="text-4xl font-semibold mb-6 font-serif">Please Deposit</h4>
+                <input id="money-amount" class="p-2 rounded-lg w-3/4" type="number" placeholder="$ Enter Your Amount*">
+                <button id="deposit-money" class="block mx-auto text-gray-100 font-bold py-4 px-8 mt-7 font-serif uppercase tracking-widest rounded-full button-color">Submit</button>
+            </div>
+            <div class="withdraw-amount bg-red-400 text-center py-8 rounded-lg">
+                <img class="w-28 inline-block mb-4" src="./resource/money-withdraw.svg" alt="">
+                <h4 class="text-4xl font-semibold mb-6 font-serif">Please Withdraw</h4>
+                <input id="input-withdraw" class="p-2 rounded-lg w-3/4" type="number" placeholder="$ Enter Your Amount*">
+                <button id="withdraw-amount" class="block mx-auto text-gray-100 font-bold py-4 px-8 mt-7 font-serif uppercase tracking-widest rounded-full button-color">Submit</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="./js/account.js"></script>
+</body>
+</html>

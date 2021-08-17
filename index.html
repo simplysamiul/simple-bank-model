@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------- css link ------------------>
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- -------------- Tailwind Cdn -------------->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- -------------- FavIcon link -------------->
+    <link rel="shortcut icon" href="./resource/login-icon.png" type="image/x-icon">
+    <title>Login-Page</title>
+</head>
+<body>
+    <header class="w-3/4 mx-auto text-center">
+        <h1 class="lg:text-5xl text-3xl font-mono font-bold">Please Log-In <span>Your Own Account</span></h1>
+        <h2 class="text-2xl my-8 text-red-600" id="errMessage"></h2>
+    </header>
+    <main class="w-3/4 mx-auto rounded-lg">
+        <div class="w-3/4 mx-auto form">
+            <label class="text-xl">Email :</label>
+            <input id="emailInput" class="block border-2 rounded-lg w-full p-1 mb-4" type="email" required placeholder="Enter your email*">
+            <label class="text-xl">Password :</label>
+            <input id="passwordInput" class="block border-2 rounded-lg w-full p-1" type="password" required placeholder="Enter your password*">
+            <button id="logInButton" class="mt-4 font-bold py-2 px-4 rounded-lg">Log-In</button>
+            <p class="text-gray-400 mt-4"> <spane class="text-red-400 pr-4 text-xl">Note :</spane> Email: samiul@howlader.com & Password: 1234</p>
+        </div>
+    </main>
+
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    background-color: #151B54;
+}
+header{
+    margin:100px 0;
+}
+header h1{
+    color:#D0D3D4;
+}
+header h1 span{
+    color: #D2B4DE ;
+}
+.deposit-amount{
+    background-image: linear-gradient(45deg, #34D399, #FDE68A);
+}
+.withdraw-amount{
+    background-image: linear-gradient(200deg, #F87171, #fde68ab5);
+}
+.button-color{
+    background-color: #151B54;
+}
